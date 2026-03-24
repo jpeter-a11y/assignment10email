@@ -5,11 +5,20 @@
 
 <body>
 
-<h2>Enter Student Name</h2>
+<h2>Email Validation</h2>
 
-<input type="text" ng-model="n">
+<form name="f">
 
-<h3>Hello {{n}}</h3>
+Email:
+<input type="email" name="e" ng-model="m">
+
+<br><br>
+
+<span style="color:red" ng-show="f.e.$invalid && f.e.$touched">
+Invalid Email
+</span>
+
+</form>
 
 </body>
 </html>
